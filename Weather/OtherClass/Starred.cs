@@ -30,6 +30,18 @@
 
                 }
 
+                 if(button == 2)
+                {
+                    Forecast[] x = await wFetcher.GetWeekCast(name);
+                    Data.Data3.temp1 = x[0].Temp;
+                    Data.Data3.temp2 = x[1].Temp;
+                    Data.Data3.temp3 = x[2].Temp;
+                    
+                    Data.Data3.humid1 = x[0].Humidity;
+                    Data.Data3.humid2 = x[1].Humidity;
+                    Data.Data3.humid3 = x[2].Humidity;
+                    Data.Data3.place = name;
+                }
 
             }
 
@@ -54,6 +66,19 @@
                     }
 
                 }
+
+                if (button == 2)
+                {
+                    Forecast[] x = await wFetcher.GetWeekCast(name);
+                    Data.Data3.temp1 = x[0].Temp;
+                    Data.Data3.temp2 = x[1].Temp;
+                    Data.Data3.temp3 = x[2].Temp;
+
+                    Data.Data3.humid1 = x[0].Humidity;
+                    Data.Data3.humid2 = x[1].Humidity;
+                    Data.Data3.humid3 = x[2].Humidity;
+                    Data.Data3.place = name;
+                }
             }
             if (index == 3)
             {
@@ -75,7 +100,18 @@
                     }
                 }
 
+                if (button == 2)
+                {
+                    Forecast[] x = await wFetcher.GetWeekCast(name);
+                    Data.Data3.temp1 = x[0].Temp;
+                    Data.Data3.temp2 = x[1].Temp;
+                    Data.Data3.temp3 = x[2].Temp;
 
+                    Data.Data3.humid1 = x[0].Humidity;
+                    Data.Data3.humid2 = x[1].Humidity;
+                    Data.Data3.humid3 = x[2].Humidity;
+                    Data.Data3.place = name;
+                }
             }
 
             if (index == 4)
@@ -97,7 +133,18 @@
 
                     }
                 }
+                if (button == 2)
+                {
+                    Forecast[] x = await wFetcher.GetWeekCast(name);
+                    Data.Data3.temp1 = x[0].Temp;
+                    Data.Data3.temp2 = x[1].Temp;
+                    Data.Data3.temp3 = x[2].Temp;
 
+                    Data.Data3.humid1 = x[0].Humidity;
+                    Data.Data3.humid2 = x[1].Humidity;
+                    Data.Data3.humid3 = x[2].Humidity;
+                    Data.Data3.place = name;
+                }
 
             }
         }

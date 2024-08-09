@@ -12,8 +12,8 @@ namespace Weather
         {
             Application.ThreadException += new ThreadExceptionEventHandler(GlobalExceptionHandler);
 
-            // Add the event handler for handling non-UI thread exceptions
-            AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(GlobalExceptionHandler);
+             //Add the event handler for handling non-UI thread exceptions
+           AppDomain.CurrentDomain.UnhandledException += new UnhandledExceptionEventHandler(GlobalExceptionHandler);
 
 
             // To customize application configuration such as set high DPI settings or default font,
@@ -35,14 +35,14 @@ namespace Weather
             }
         }
 
-        private static void GlobalExceptionHandler(object sender, ThreadExceptionEventArgs e)
-        {
+       private static void GlobalExceptionHandler(object sender, ThreadExceptionEventArgs e)
+      {
             Error.HandleError(e.Exception);
 
-        }
+      }
 
         private static void GlobalExceptionHandler(object sender, UnhandledExceptionEventArgs e)
-        {
+       {
             if (e.ExceptionObject is Exception ex)
             {
                 Error.HandleError(ex);

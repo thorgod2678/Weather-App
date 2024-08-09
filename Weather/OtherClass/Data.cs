@@ -125,4 +125,17 @@ namespace Data
 
         }
     }
+
+    public static class Data3
+    {
+        public static string temp1;
+        public static string temp2;
+        public static string temp3;
+
+        public static string humid1;
+        public static string humid2;
+        public static string humid3;
+
+        public static string place;
+    }
 }
